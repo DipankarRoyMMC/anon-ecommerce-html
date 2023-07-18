@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div class="overlay" data-overlays></div>
+    <div class="overlay" data-overlay></div>
     <!-- MODAL START -->
     <div class="modal closed" data-modal>
       <div class="modal-close-overlay" data-modal-overlay></div>
@@ -399,7 +399,7 @@
               </div>
             </button>
             <!-- submenu category list  -->
-            <ul class="submenu-category-list" data-accordion>
+            <ul class="submenu-category-list " data-accordion>
               <li class="submenu-category">
                 <a href="#" class="submenu-title">Shirt</a>
               </li>
@@ -430,7 +430,7 @@
                 <a href="#" class="submenu-title">Dress & Frock</a>
               </li>
               <li class="submenu-category">
-                <a href="#" class="submenu-titlie">Earring</a>
+                <a href="#" class="submenu-title">Earring</a>
               </li>
               <li class="submenu-category">
                 <a href="#" class="submenu-title">Necklace</a>
@@ -507,12 +507,12 @@
         <div class="menu-bottom">
           <ul class="menu-category-list">
             <li class="menu-category">
-              <button class="accordion-menu" data-accodion-btn>
+              <button class="accordion-menu" data-accordion-btn>
                 <p class="menu-title">Languages</p>
                 <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
               </button>
               <!-- submenu category list  -->
-              <ul class="submenu-category-list">
+              <ul class="submenu-category-list" data-accordion>
                 <li class="submenu-category">
                   <a href="#" class="submenu-title">English</a>
                 </li>
@@ -525,8 +525,8 @@
               </ul>
             </li>
 
-            <li class="menu-category-list">
-              <button class="accordion-menu" data-accodion-btn >
+            <li class="menu-category">
+              <button class="accordion-menu" data-accordion-btn >
                 <p class="menu-title">Currency</p>
                 <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
               </button>
@@ -570,9 +570,48 @@
     </header>
     <!-- HEADER END -->
 
+    <!-- MAIN START -->
+    <!-- banner start  -->
+    <div class="banner">
+      <div class="container">
+        <div class="slider-container has-scrollbar">
+          <div class="slider-item">
+            <img class="banner-img" src="assets/img/banner-1.jpg" alt="women latest shop">
+            <div class="banner-content">
+              <p class="banner-subtitle">Latest Trending</p>
+              <h2 class="banner-title">Women's latest fashion sale</h2>
+              <p class="banner-text">starting at &dollar; <b>20</b>.00</p>
+              <a href="#" class="banner-btn">Shop now</a>
+            </div>
+          </div>
 
-    <!-- app js  -->
-    <script src="assets/js/app.js"></script>
+          <div class="slider-item">
+            <img class="banner-img" src="assets/img/banner-2.jpg" alt="latest sunglass">
+            <div class="banner-content">
+              <p class="banner-subtitle">Latest Accreciories</p>
+              <h2 class="banner-title">Shop latest sunglass</h2>
+              <p class="banner-text">starting at &dollar; <b>15</b>.00</p>
+              <a href="#" class="banner-btn">Shop now</a>
+            </div>
+          </div>
+
+          <div class="slider-item">
+            <img class="banner-img" src="assets/img/banner-3.jpg" alt="latest product">
+            <div class="banner-content">
+              <p class="banner-subtitle">Laset dress</p>
+              <h2 class="banner-title">Our latest dress collection</h2>
+              <p class="banner-text">starting from &dollar; <b>30</b>.00</p>
+              <a href="#" class="banner-btn">Shop now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- banner end  -->
+   
+
+
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -581,5 +620,8 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+        <!-- app js  -->
+      <script src="assets/js/app.js"></script>
   </body>
 </html>
