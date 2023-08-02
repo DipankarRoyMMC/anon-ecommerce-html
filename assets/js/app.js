@@ -39,9 +39,12 @@ for(let i = 0; i < mobileMenuOpenBtn.length; i++){
         overlay.classList.add('active');
 
         // this code will be down just }) symbol outside
-        mobileMenuCloseBtn[i].addEventListener('click', mobileMenuCloseFunc);
-        overlay.addEventListener('click', mobileMenuCloseFunc);
+        // mobileMenuCloseBtn[i].addEventListener('click', mobileMenuCloseFunc);
+        // overlay.addEventListener('click', mobileMenuCloseFunc);
     }); 
+    mobileMenuCloseBtn[i].addEventListener('click', mobileMenuCloseFunc);
+    overlay.addEventListener('click', mobileMenuCloseFunc);
+  
       
 }
 
